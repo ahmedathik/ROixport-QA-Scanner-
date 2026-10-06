@@ -5,7 +5,7 @@ import io
 from PIL import Image
 
 st.set_page_config(
-    page_title="ROIFO | Ghost-Scan Diagnostic Utility",
+    page_title="ROFIO Scanner",
     page_icon="🛡️",
     layout="wide"
 )
@@ -16,10 +16,10 @@ st.markdown("""
 .header-box { background: linear-gradient(90deg, #090d16 0%, #0f172a 100%); padding: 20px; border-radius: 10px; border: 1px solid rgba(56, 189, 248, 0.2); margin-bottom: 20px; }
 .card { background: rgba(17, 24, 39, 0.85); border: 1px solid rgba(56, 189, 248, 0.15); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
 </style>
-\<div class="header-box">
-    <h2 style="margin:0; color: #38bdf8;">🛡️ ROIFO Ghost-Scan Diagnostic Utility</h2>
+<div class="header-box">
+    <h2 style="margin:0; color: #38bdf8;">🛡️ ROFIO Scanner</h2>
     <p style="margin:4px 0 0 0; color: #94a3b8; font-size: 13px;">Instant Surface Glare Filtering & Micro-Defect Inspection Sampler</p>
-\</div>
+</div>
 """, unsafe_allow_html=True)
 
 st.sidebar.markdown("### ⚙️ Diagnostic Mode")
@@ -101,3 +101,14 @@ if uploaded_file is not None:
             st.info("Sample added to local calibration memory. Accuracy adjusted.")
 else:
     st.info("👈 Upload an image in the sidebar to run a live diagnostic sample scan.")
+
+# Footer Signature / Showcase Details
+st.markdown("---")
+st.markdown("""
+<div style="text-align: center; color: #94a3b8; font-size: 13px; padding: 10px 0;">
+    Developed By <b>ROIXport (ROIFO)</b> | Founded By IIT Kharagpur Young Alumni Achiever Awardee<br>
+    📧 <a href="mailto:ahmedathik@gmail.com" style="color: #38bdf8; text-decoration: none;">ahmedathik@gmail.com</a> &nbsp;|&nbsp; 
+    📞 <a href="tel:+919599618201" style="color: #38bdf8; text-decoration: none;">+91 9599618201</a><br>
+    <span style="font-style: italic; color: #cbd5e1; margin-top: 4px; display: inline-block;">For Technology Adoption</span>
+</div>
+""", unsafe_allow_html=True)
